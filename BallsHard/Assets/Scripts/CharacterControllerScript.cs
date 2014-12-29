@@ -33,7 +33,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			movement.y += Physics.gravity.y * Time.deltaTime;
 		}
 
-		if (Input.GetButton ("Jump") && controller.isGrounded == true) {
+		if (Input.GetKeyDown(KeyCode.UpArrow) && controller.isGrounded == true) {
 			movement.y = jumpHeight;
 		}
 
