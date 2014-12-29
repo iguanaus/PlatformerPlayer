@@ -3,6 +3,7 @@ using System.Collections;
 
 public class goalScript : MonoBehaviour {
 	private bool solved;
+	public gameController controller;
 	// Use this for initialization
 	void Start () {
 	
@@ -17,14 +18,10 @@ public class goalScript : MonoBehaviour {
 		if (other.tag == tag) {
 			solved = true;
 			other.rigidbody.isKinematic = true;
+			controller.levelWon = solved;
 		}
 	}
 
-	void OnGUI() {
-		if (solved) {
-			GUI.Label (new Rect (Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "YOU SOLVED IT!!!! GRATS NERD");
-		}
-	}
 
 
 
