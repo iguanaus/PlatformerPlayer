@@ -21,7 +21,8 @@ public class gameController : MonoBehaviour {
 		degreesturned = 0;
 		levelWon = false;
 	}
-	
+
+	private int factor =1;
 	// Update is called once per frame
 	void Update () {
 
@@ -31,12 +32,29 @@ public class gameController : MonoBehaviour {
 			print("You pressed enter!");
 			character.transform.position = spawnPoint.transform.position;
 		}
+		if (levelOn == 3) {
+			//lets make it spin
 
-		//lets make it spin
-		degreesturned += 0.1f;
-		//transform.Rotate (.1f,.0f,.1f);
-		if (degreesturned >= 360) {
-			degreesturned = 0;
+			degreesturned = .1f*factor + degreesturned;
+			transform.Rotate (.1f*factor, .0f, .1f*factor);
+
+			if (degreesturned >= 30) {
+				factor = -1;
+			} 
+			if (degreesturned <= -15) {
+				factor = 1;
+			}
+			/*
+			if (degreesturned >= 360) {
+			//lets make it spin backwards?
+				degreesturned+= -0.2f + degreesturned;
+				transform.Rotate (-0.2f, .0f, -0.2f);
+				if (degreesturned = 0) {
+					//stahp the spinning
+					degreesturned 
+			}
+			*/
+
 		}
 
 	}
