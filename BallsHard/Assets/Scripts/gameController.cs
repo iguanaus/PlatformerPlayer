@@ -13,7 +13,7 @@ public class gameController : MonoBehaviour {
 	public GameObject spawnPoint;
 	public GameObject character;
 	public GameObject sphereSpawnPoint;
-	public float levelOn = 1;
+	public int levelOn = 1;
 	public bool levelWon;
 
 	// Use this for initialization
@@ -24,6 +24,7 @@ public class gameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.GetKeyDown(KeyCode.Return)) {
 			sphereObject.gameObject.rigidbody.velocity = Vector3.zero;
 			sphereObject.transform.position = sphereSpawnPoint.transform.position;
@@ -54,18 +55,20 @@ public class gameController : MonoBehaviour {
 
 	void nextLevel() {
 		//this will change the scene/settings
-		levelOn++;
+		//levelOn++;
 		levelWon = false;
 		setUpNextLevel(levelOn);
 	}
-	void setUpNextLevel(float level) {
+	void setUpNextLevel(int level) {
+		Application.LoadLevel(level);
 
+		/*
 		sphereObject.rigidbody.isKinematic = false;
 		character.transform.position = spawnPoint.transform.position;
 
 		sphereObject.gameObject.rigidbody.velocity = Vector3.zero;
 		sphereObject.transform.position = sphereSpawnPoint.transform.position;
-
+		*/
 	
 	}
 }

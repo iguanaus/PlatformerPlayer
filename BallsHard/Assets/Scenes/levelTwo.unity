@@ -228,83 +228,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &575711563
+--- !u!1 &558028291
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 575711568}
-  - 20: {fileID: 575711567}
-  - 92: {fileID: 575711566}
-  - 124: {fileID: 575711565}
-  - 81: {fileID: 575711564}
+  - 4: {fileID: 558028292}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: UserSpawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &575711564
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575711563}
-  m_Enabled: 1
---- !u!124 &575711565
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575711563}
-  m_Enabled: 1
---- !u!92 &575711566
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575711563}
-  m_Enabled: 1
---- !u!20 &575711567
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575711563}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: .300000012
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_HDR: 0
-  m_OcclusionCulling: 1
---- !u!4 &575711568
+--- !u!4 &558028292
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 575711563}
+  m_GameObject: {fileID: 558028291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: .600000024, y: 2.5999999, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -451,7 +397,7 @@ GameObject:
   - 65: {fileID: 904179825}
   - 114: {fileID: 904179824}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Goal
   m_TagString: goalSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,6 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0680e79a60cdd2a4e80da2d1d6c0a425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 1013063338}
 --- !u!65 &904179825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -595,6 +542,32 @@ Transform:
   m_LocalScale: {x: 19.6458931, y: .228700697, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1009398668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1009398669}
+  m_Layer: 0
+  m_Name: BallSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1009398669
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009398668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.36000013, y: 10.0600004, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1013063337
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +600,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereObject: {fileID: 317236801}
+  spawnPoint: {fileID: 558028291}
+  character: {fileID: 1055035101}
+  sphereSpawnPoint: {fileID: 1009398668}
+  levelOn: 2
+  levelWon: 0
 --- !u!81 &1013063339
 AudioListener:
   m_ObjectHideFlags: 0
@@ -684,7 +662,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013063337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.79741669, z: -10}
+  m_LocalPosition: {x: .918605089, y: 6.42811108, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
