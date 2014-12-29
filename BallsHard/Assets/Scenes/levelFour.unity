@@ -74,30 +74,30 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &54810196
+--- !u!1 &347321758
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 54810200}
-  - 33: {fileID: 54810199}
-  - 136: {fileID: 54810198}
-  - 23: {fileID: 54810197}
+  - 4: {fileID: 347321762}
+  - 33: {fileID: 347321761}
+  - 136: {fileID: 347321760}
+  - 23: {fileID: 347321759}
   m_Layer: 0
-  m_Name: TrollCylinders
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &54810197
+--- !u!23 &347321759
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 54810196}
+  m_GameObject: {fileID: 347321758}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -110,39 +110,41 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &54810198
+  m_SortingLayerID: 0
+--- !u!136 &347321760
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 54810196}
+  m_GameObject: {fileID: 347321758}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: .5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &54810199
+--- !u!33 &347321761
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 54810196}
+  m_GameObject: {fileID: 347321758}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &54810200
+--- !u!4 &347321762
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 54810196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.46999979, y: 3.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 347321758}
+  m_LocalRotation: {x: -.705867887, y: 0, z: 0, w: .708343625}
+  m_LocalPosition: {x: -1.83553743, y: 5.56028938, z: -5}
+  m_LocalScale: {x: 3, y: .5, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 12
 --- !u!1 &275352845
 GameObject:
@@ -172,124 +174,136 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
 --- !u!1 &354852576
+=======
+--- !u!1 &414483341
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 354852580}
-  - 33: {fileID: 354852579}
-  - 65: {fileID: 354852578}
-  - 23: {fileID: 354852577}
+  - 4: {fileID: 414483345}
+  - 108: {fileID: 414483344}
+  - 65: {fileID: 414483343}
+  - 114: {fileID: 414483342}
   m_Layer: 0
-  m_Name: Plat4
-  m_TagString: Untagged
+  m_Name: Goal
+  m_TagString: goalSphere
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &354852577
-Renderer:
+--- !u!114 &414483342
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354852576}
+  m_GameObject: {fileID: 414483341}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &354852578
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0680e79a60cdd2a4e80da2d1d6c0a425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1422466922}
+--- !u!65 &414483343
 BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354852576}
+  m_GameObject: {fileID: 414483341}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &354852579
-MeshFilter:
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: .899999976, z: 2}
+--- !u!108 &414483344
+Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354852576}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &354852580
+  m_GameObject: {fileID: 414483341}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2.86999989
+  m_Range: 10
+  m_SpotAngle: 51.5343361
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &414483345
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354852576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 5, z: 0}
-  m_LocalScale: {x: 2, y: .200000003, z: 1}
+  m_GameObject: {fileID: 414483341}
+  m_LocalRotation: {x: .686346114, y: 0, z: 0, w: .727275133}
+  m_LocalPosition: {x: -5.82673073, y: 3.92862082, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 8
 --- !u!1 &402771630
+=======
+--- !u!1 &477038657
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 402771634}
-  - 33: {fileID: 402771633}
-  - 65: {fileID: 402771632}
-  - 23: {fileID: 402771631}
+  - 4: {fileID: 477038663}
+  - 33: {fileID: 477038662}
+  - 136: {fileID: 477038661}
+  - 23: {fileID: 477038660}
+  - 114: {fileID: 477038659}
+  - 143: {fileID: 477038658}
   m_Layer: 0
-  m_Name: Plat2
+  m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &402771631
-Renderer:
+--- !u!143 &477038658
+CharacterController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 402771630}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &402771632
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 402771630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_GameObject: {fileID: 477038657}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Height: 2
+  m_Radius: .500000119
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
 --- !u!33 &402771633
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -311,28 +325,28 @@ Transform:
   m_RootOrder: 5
 --- !u!1 &513501587
 GameObject:
+=======
+--- !u!114 &477038659
+MonoBehaviour:
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 513501591}
-  - 33: {fileID: 513501590}
-  - 136: {fileID: 513501589}
-  - 23: {fileID: 513501588}
-  m_Layer: 0
-  m_Name: TrollCylinders
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &513501588
+  m_GameObject: {fileID: 477038657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59295c81f6919344855c6b5bfb25157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  jumpHeight: 8
+  pushPower: 2
+--- !u!23 &477038660
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513501587}
+  m_GameObject: {fileID: 477038657}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -345,14 +359,15 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &513501589
+  m_SortingLayerID: 0
+--- !u!136 &477038661
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513501587}
+  m_GameObject: {fileID: 477038657}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0
@@ -360,93 +375,56 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &513501590
+--- !u!33 &477038662
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513501587}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &513501591
+  m_GameObject: {fileID: 477038657}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &477038663
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513501587}
+  m_GameObject: {fileID: 477038657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.47000003, y: 3.75, z: 0}
+  m_LocalPosition: {x: .608448923, y: 2.6881752, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 11
 --- !u!1 &727633683
+=======
+--- !u!1 &535981882
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 727633687}
-  - 33: {fileID: 727633686}
-  - 65: {fileID: 727633685}
-  - 23: {fileID: 727633684}
+  - 4: {fileID: 535981883}
   m_Layer: 0
-  m_Name: Plat3
+  m_Name: BallSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &727633684
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727633683}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &727633685
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727633683}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &727633686
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727633683}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &727633687
+--- !u!4 &535981883
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727633683}
+  m_GameObject: {fileID: 535981882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 7, z: 0}
+  m_LocalPosition: {x: -3.5, y: 14.8954706, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 6
 --- !u!1 &857525209
 GameObject:
@@ -565,29 +543,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
 --- !u!1 &948046682
+=======
+--- !u!1 &966970999
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 948046686}
-  - 33: {fileID: 948046685}
-  - 65: {fileID: 948046684}
-  - 23: {fileID: 948046683}
+  - 4: {fileID: 966971003}
+  - 33: {fileID: 966971002}
+  - 65: {fileID: 966971001}
+  - 23: {fileID: 966971000}
   m_Layer: 0
-  m_Name: Wall1Plat1
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &948046683
+  m_IsActive: 1
+--- !u!23 &966971000
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948046682}
+  m_GameObject: {fileID: 966970999}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -600,86 +581,89 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &948046684
+  m_SortingLayerID: 0
+--- !u!65 &966971001
 BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948046682}
+  m_GameObject: {fileID: 966970999}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &948046685
+--- !u!33 &966971002
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948046682}
+  m_GameObject: {fileID: 966970999}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &948046686
+--- !u!4 &966971003
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948046682}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: 10.3599997, z: .430000007}
-  m_LocalScale: {x: 4, y: .200000003, z: .5}
+  m_GameObject: {fileID: 966970999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .702831268, y: 1.34362221, z: -5}
+  m_LocalScale: {x: 19.6458931, y: .228700697, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 2
 --- !u!1 &1033621701
+=======
+--- !u!1 &1422466921
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1033621705}
-  - 33: {fileID: 1033621704}
-  - 65: {fileID: 1033621703}
-  - 23: {fileID: 1033621702}
+  - 4: {fileID: 1422466927}
+  - 20: {fileID: 1422466926}
+  - 92: {fileID: 1422466925}
+  - 124: {fileID: 1422466924}
+  - 81: {fileID: 1422466923}
+  - 114: {fileID: 1422466922}
   m_Layer: 0
-  m_Name: RampPlat1
-  m_TagString: Untagged
+  m_Name: Main Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1033621702
-Renderer:
+--- !u!114 &1422466922
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1033621701}
+  m_GameObject: {fileID: 1422466921}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &1033621703
-BoxCollider:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb8fc757f59b0c42b16c200fc3f4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereObject: {fileID: 1846578839}
+  spawnPoint: {fileID: 1791049236}
+  character: {fileID: 477038657}
+  sphereSpawnPoint: {fileID: 535981882}
+  levelOn: 4
+  levelWon: 0
+--- !u!81 &1422466923
+AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1033621701}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 1422466921}
   m_Enabled: 1
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -824,80 +808,91 @@ GameObject:
   m_IsActive: 1
 --- !u!23 &1191990911
 Renderer:
+=======
+--- !u!124 &1422466924
+Behaviour:
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191990910}
+  m_GameObject: {fileID: 1422466921}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!136 &1191990912
-CapsuleCollider:
+--- !u!92 &1422466925
+Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191990910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1191990913
-MeshFilter:
+  m_GameObject: {fileID: 1422466921}
+  m_Enabled: 1
+--- !u!20 &1422466926
+Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191990910}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1191990914
+  m_GameObject: {fileID: 1422466921}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 131.100006
+  orthographic: 0
+  orthographic size: 10
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+  m_OcclusionCulling: 1
+--- !u!4 &1422466927
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191990910}
+  m_GameObject: {fileID: 1422466921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.42000008, y: 3.75, z: 0}
+  m_LocalPosition: {x: .918605089, y: 8.30502605, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 13
 --- !u!1 &1347606451
+=======
+--- !u!1 &1611576859
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1347606455}
-  - 33: {fileID: 1347606454}
-  - 65: {fileID: 1347606453}
-  - 23: {fileID: 1347606452}
+  - 4: {fileID: 1611576863}
+  - 33: {fileID: 1611576862}
+  - 136: {fileID: 1611576861}
+  - 23: {fileID: 1611576860}
   m_Layer: 0
-  m_Name: Plat5
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1347606452
+--- !u!23 &1611576860
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1347606451}
+  m_GameObject: {fileID: 1611576859}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -910,120 +905,96 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1347606453
-BoxCollider:
+  m_SortingLayerID: 0
+--- !u!136 &1611576861
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1347606451}
+  m_GameObject: {fileID: 1611576859}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: .5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1347606454
+--- !u!33 &1611576862
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1347606451}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1347606455
+  m_GameObject: {fileID: 1611576859}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1611576863
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1347606451}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.13999987, y: 1.5, z: 0}
-  m_LocalScale: {x: 4, y: .200000003, z: 1}
+  m_GameObject: {fileID: 1611576859}
+  m_LocalRotation: {x: -.705867887, y: 0, z: 0, w: .708343625}
+  m_LocalPosition: {x: -3.5, y: 11.4269333, z: -5}
+  m_LocalScale: {x: 5, y: .5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 9
 --- !u!1 &1356507359
+=======
+--- !u!1 &1791049236
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1356507363}
-  - 33: {fileID: 1356507362}
-  - 65: {fileID: 1356507361}
-  - 23: {fileID: 1356507360}
+  - 4: {fileID: 1791049237}
   m_Layer: 0
-  m_Name: Wall2Plat1
+  m_Name: UserSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1356507360
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356507359}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &1356507361
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356507359}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1356507362
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356507359}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1356507363
+  m_IsActive: 1
+--- !u!4 &1791049237
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356507359}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -.150000006, y: 10.5, z: -.5}
-  m_LocalScale: {x: 4.5, y: .200000003, z: 1}
+  m_GameObject: {fileID: 1791049236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .600000024, y: 2.5999999, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 3
 --- !u!1 &1445870704
+=======
+--- !u!1 &1846578839
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   - 4: {fileID: 1445870709}
   - 33: {fileID: 1445870708}
   - 135: {fileID: 1445870707}
   - 23: {fileID: 1445870706}
   - 54: {fileID: 1445870705}
+=======
+  - 4: {fileID: 1846578844}
+  - 33: {fileID: 1846578843}
+  - 135: {fileID: 1846578842}
+  - 23: {fileID: 1846578841}
+  - 54: {fileID: 1846578840}
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
   m_Layer: 0
   m_Name: Sphere
   m_TagString: goalSphere
@@ -1031,6 +1002,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
 --- !u!54 &1445870705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1116,11 +1088,29 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1588096339
+=======
+--- !u!54 &1846578840
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846578839}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 8
+  m_CollisionDetection: 0
+--- !u!23 &1846578841
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1588096338}
+  m_GameObject: {fileID: 1846578839}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1133,63 +1123,68 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1588096340
-BoxCollider:
+  m_SortingLayerID: 0
+--- !u!135 &1846578842
+SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1588096338}
+  m_GameObject: {fileID: 1846578839}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1588096341
+--- !u!33 &1846578843
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1588096338}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1588096342
+  m_GameObject: {fileID: 1846578839}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1846578844
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1588096338}
+  m_GameObject: {fileID: 1846578839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.01999998, y: 7.76000023, z: 0}
-  m_LocalScale: {x: .100000001, y: .5, z: 1}
+  m_LocalPosition: {x: -3.5, y: 14.6809864, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 7
 --- !u!1 &1696716666
+=======
+--- !u!1 &1866983260
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1696716670}
-  - 33: {fileID: 1696716669}
-  - 65: {fileID: 1696716668}
-  - 23: {fileID: 1696716667}
+  - 4: {fileID: 1866983264}
+  - 33: {fileID: 1866983263}
+  - 136: {fileID: 1866983262}
+  - 23: {fileID: 1866983261}
   m_Layer: 0
-  m_Name: SCBarrPlat1
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1696716667
+--- !u!23 &1866983261
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696716666}
+  m_GameObject: {fileID: 1866983260}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1202,38 +1197,41 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1696716668
-BoxCollider:
+  m_SortingLayerID: 0
+--- !u!136 &1866983262
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696716666}
+  m_GameObject: {fileID: 1866983260}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: .5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1696716669
+--- !u!33 &1866983263
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696716666}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1696716670
+  m_GameObject: {fileID: 1866983260}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1866983264
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696716666}
-  m_LocalRotation: {x: .5, y: .5, z: -.500000119, w: .49999994}
-  m_LocalPosition: {x: 2, y: 10.4799995, z: -.0799999982}
-  m_LocalScale: {x: 1, y: .200000003, z: 1}
+  m_GameObject: {fileID: 1866983260}
+  m_LocalRotation: {x: -.705867887, y: 0, z: 0, w: .708343625}
+  m_LocalPosition: {x: 1.76089859, y: 4.06549406, z: -5}
+  m_LocalScale: {x: 1, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 1
 --- !u!1 &1848816292
 GameObject:
@@ -1299,74 +1297,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
 --- !u!1 &1993893126
+=======
+--- !u!1 &2067480965
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1993893130}
-  - 33: {fileID: 1993893129}
-  - 136: {fileID: 1993893128}
-  - 23: {fileID: 1993893127}
+  - 4: {fileID: 2067480967}
+  - 108: {fileID: 2067480966}
   m_Layer: 0
-  m_Name: TrollCylinders
+  m_Name: Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1993893127
-Renderer:
+--- !u!108 &2067480966
+Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1993893126}
+  m_GameObject: {fileID: 2067480965}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!136 &1993893128
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1993893126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1993893129
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1993893126}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1993893130
+  serializedVersion: 3
+  m_Type: 1
+  m_Color: {r: .136029422, g: .5, b: .454817474, a: 1}
+  m_Intensity: .5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &2067480967
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1993893126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.48999977, y: 3.75, z: 0}
+  m_GameObject: {fileID: 2067480965}
+  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
+  m_LocalPosition: {x: .310976505, y: 4.00447416, z: .795871735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 10
 --- !u!1 &2011546548
 GameObject:
@@ -1469,29 +1464,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
 --- !u!1 &2095422035
+=======
+--- !u!1 &2090913572
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 2095422039}
-  - 33: {fileID: 2095422038}
-  - 65: {fileID: 2095422037}
-  - 23: {fileID: 2095422036}
+  - 4: {fileID: 2090913576}
+  - 33: {fileID: 2090913575}
+  - 136: {fileID: 2090913574}
+  - 23: {fileID: 2090913573}
   m_Layer: 0
-  m_Name: BasePlat1
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &2095422036
+--- !u!23 &2090913573
 Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2095422035}
+  m_GameObject: {fileID: 2090913572}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1504,36 +1502,41 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2095422037
-BoxCollider:
+  m_SortingLayerID: 0
+--- !u!136 &2090913574
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2095422035}
+  m_GameObject: {fileID: 2090913572}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: .5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &2095422038
+--- !u!33 &2090913575
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2095422035}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2095422039
+  m_GameObject: {fileID: 2090913572}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2090913576
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2095422035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
-  m_LocalScale: {x: 4, y: .200000003, z: 1}
+  m_GameObject: {fileID: 2090913572}
+  m_LocalRotation: {x: -.705867887, y: 0, z: 0, w: .708343625}
+  m_LocalPosition: {x: 4.54576063, y: 8.19556427, z: -5}
+  m_LocalScale: {x: 4, y: .5, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:BallsHard/Assets/Scenes/levelThree.unity
   m_RootOrder: 0
+=======
+>>>>>>> FETCH_HEAD:BallsHard/Assets/Scenes/levelFour.unity
